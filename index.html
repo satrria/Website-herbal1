@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Obat Herbal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Bagian Hero dengan Gambar dan Penjelasan -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Selamat Datang di Dunia Obat Herbal</h1>
+            <p>Kami hadir untuk menyajikan berbagai informasi tentang khasiat tanaman herbal, jamu, dan obat tradisional lainnya. Dari manfaat kesehatan hingga cara penggunaannya, jadikan website ini panduan Anda menuju gaya hidup sehat yang alami.</p>
+        </div>
+        <div class="hero-image">
+            <img src="https://dekoruma.blog/wp-content/uploads/2018/05/tanaman-obat.jpg" alt="Tanaman Herbal">
+        </div>
+    </section>
+
+    <!-- Pencarian Tanaman Herbal -->
+    <section class="search-section">
+        <input type="text" id="searchBar" placeholder="Cari tanaman & obat herbal..." oninput="searchHerbs()">
+    </section>
+
+    <!-- Daftar Tanaman Herbal -->
+    <section class="herb-list">
+        <h2>Daftar Tanaman & Obat Herbal</h2>
+        <div class="herb-container" id="herbContainer">
+            <!-- Gambar dan Nama Herbal akan dimasukkan dengan JavaScript -->
+        </div>
+    </section>
+
+    <!-- Modal Pop-up -->
+    <div id="herbModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalHerbImage" src="" alt="Gambar Tanaman Herbal">
+            <h2 id="modalHerbName">Nama Tanaman</h2>
+            <h3 id="modalHerbLatinName">Nama Latin</h3>
+            <!-- Bungkus teks dengan div agar scrollable -->
+            <div class="modal-text">
+                <p id="modalHerbDescription">Deskripsi panjang tentang tanaman herbal.</p>
+                <p id="modalHerbBenefits">Manfaat tanaman herbal untuk berbagai penyakit.</p>
+                <p id="modalHerbBrew">Cara mengolah tanaman herbal menjadi obat.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Bagian Tim -->
+    <section class="team-section">
+        <h2>Tim Kami</h2>
+        <div class="team-container">
+            <div class="team-card">
+                <img src="./Assets/Image/5.jpeg" alt="Foto Anggota Tim">
+                <h3>Andra saferi wijaya M. Kep</h3>
+                <p><strong>Dosen</strong></p>
+                <p>Sistem Informasi Kesehatan</p>
+                <p>Keperawatan, Profesi Ners</p>
+                <p>Poltekkes Kemenkes Bengkulu</p>
+            </div>
+            <div class="team-card">
+                <img src="./Assets/Image/1.jpg" alt="Foto Anggota Tim">
+                <h3>Salsa Oktaviana</h3>
+                <p><strong>Mahasiswi</strong></p>
+                <p>Sistem Informasi Kesehatan</p>
+                <p>Keperawatan, Profesi Ners</p>
+                <p>Poltekkes Kemenkes Bengkulu</p>
+            </div>
+            <div class="team-card">
+                <img src="./Assets/Image/3.jpg" alt="Foto Anggota Tim">
+                <h3>Wulan Dwi Hariyani</h3>
+                <p><strong>Mahasiswi</strong></p>
+                <p>Sistem Informasi Kesehatan</p>
+                <p>Keperawatan, Profesi Ners</p>
+                <p>Poltekkes Kemenkes Bengkulu</p>
+            </div>
+            <div class="team-card">
+                <img src="./Assets/Image/2.jpg" alt="Foto Anggota Tim">
+                <h3>Arsya Sauqila Maulidia Alimi</h3>
+                <p><strong>Mahasiswi</strong></p>
+                <p>Sistem Informasi Kesehatan</p>
+                <p>Keperawatan, Profesi Ners</p>
+                <p>Poltekkes Kemenkes Bengkulu</p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

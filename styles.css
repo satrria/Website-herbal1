@@ -1,0 +1,268 @@
+/* Gaya dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+nav {
+    background-color: #4CAF50;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Memindahkan ul ke sebelah kanan */
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.hero-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Pencarian Tanaman Herbal */
+.search-section {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+#searchBar {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Daftar Tanaman Herbal */
+.herb-list {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.herb-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.herb-item {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.herb-item:hover {
+    transform: scale(1.05);
+}
+
+.herb-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.herb-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Modal Pop-up */
+.modal {
+    display: none; /* Tersembunyi secara default */
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Untuk scroll jika kontennya panjang */
+    background-color: rgba(0, 0, 0, 0.4); /* Background semi-transparan */
+}
+
+/* Konten Modal */
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Sesuaikan lebar modal */
+    max-width: 1000px; /* Batas lebar maksimal */
+}
+
+.modal-text {
+    max-height: 60vh; /* Batasi tinggi area teks */
+    overflow-y: auto; /* Aktifkan scroll secara vertikal */
+    padding: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #ccc; /* Opsional, untuk pemisah */
+}
+/* Bagian Tim */
+.team-section {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.team-section h2 {
+    color: #4CAF50;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-card {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+.team-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-bottom: auto;
+}
+
+.team-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.team-card p {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Responsif untuk Bagian Tim */
+@media (max-width: 768px) {
+    .team-card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-card {
+        width: 100%;
+    }
+}
+
+
+/* Gambar tanaman herbal tetap di tengah */
+#modalHerbImage {
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Nama Tanaman (Indonesia) - lebih besar */
+#modalHerbName {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Nama Tanaman (Latin) - lebih kecil dan miring */
+#modalHerbLatinName {
+    font-size: 1.2rem; /* Ukuran lebih kecil */
+    font-style: italic; /* Huruf miring */
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Penjelasan yang di-justify */
+.modal-content p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6; /* Spasi antar baris */
+    color: #666;
+    margin: 15px 0;
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
