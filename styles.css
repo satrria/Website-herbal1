@@ -205,16 +205,107 @@ nav ul li a {
     margin: 5px 0;
 }
 
-/* Responsif untuk Bagian Tim */
+/* Media Queries untuk Responsif */
 @media (max-width: 768px) {
+    /* Navbar */
+    nav ul {
+        flex-direction: column; /* Susun vertikal */
+        align-items: center; /* Pusatkan teks */
+    }
+
+    nav ul li {
+        margin: 0.5rem 0; /* Beri jarak antar item */
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column; /* Susun vertikal */
+        text-align: center; /* Pusatkan teks */
+        padding: 1rem; /* Kurangi padding */
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem; /* Kurangi ukuran font */
+    }
+
+    .hero-text p {
+        font-size: 1rem; /* Kurangi ukuran font */
+    }
+
+    .hero-image img {
+        width: 90%; /* Sesuaikan lebar */
+    }
+
+    /* Pencarian Tanaman Herbal */
+    #searchBar {
+        width: 95%; /* Lebar penuh dengan margin kecil */
+    }
+
+    /* Daftar Tanaman Herbal */
+    .herb-container {
+        flex-direction: column; /* Susun vertikal */
+    }
+
+    .herb-item {
+        width: 90%; /* Lebar penuh */
+    }
+
+    /* Modal */
+    .modal-content {
+        width: 90%; /* Sesuaikan lebar modal */
+    }
+
+    /* Bagian Tim */
+    .team-container {
+        flex-direction: column; /* Susun vertikal */
+    }
+
     .team-card {
-        width: 90%;
+        width: 90%; /* Lebar penuh */
     }
 }
 
 @media (max-width: 480px) {
-    .team-card {
-        width: 100%;
+    /* Navbar */
+    nav {
+        padding: 0.5rem;
+    }
+
+    /* Hero Section */
+    .hero-text h1 {
+        font-size: 1.5rem; /* Kurangi lebih lanjut ukuran font */
+    }
+
+    .hero-text p {
+        font-size: 0.9rem; /* Kurangi lebih lanjut ukuran font */
+    }
+
+    .hero-image img {
+        width: 100%; /* Lebar penuh */
+    }
+
+    /* Pencarian Tanaman Herbal */
+    #searchBar {
+        padding: 8px; /* Kurangi padding */
+    }
+
+    /* Modal */
+    .modal-content {
+        padding: 15px; /* Kurangi padding modal */
+    }
+
+    /* Bagian Tim */
+    .team-card img {
+        width: 150px; /* Gambar lebih kecil */
+        height: 150px;
+    }
+
+    .team-card h3 {
+        font-size: 1rem; /* Kurangi ukuran font */
+    }
+
+    .team-card p {
+        font-size: 0.9rem; /* Kurangi ukuran font */
     }
 }
 
